@@ -17,9 +17,12 @@ class ItemContainer extends Component {
 
     const items = []
     let storedValues = JSON.parse(localStorage.getItem('shappie.values'))
-    storedValues.items.map(function(item, index) {
-      return items.push(new Product(item))
-    })
+
+    if (storedValues.items !== undefined) {
+      storedValues.items.map(function(item, index) {
+        return items.push(new Product(item))
+      })
+    }
 
     this.state = {items: items}
   }
