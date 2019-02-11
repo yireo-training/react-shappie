@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
-import ItemContainer from './ItemContainer';
+import React, { Component } from 'react'
+import './App.css'
+import ItemContainer from './ItemContainer'
 
 class App extends Component {
   render() {
@@ -9,8 +9,8 @@ class App extends Component {
         <h1>Shappie</h1>
         <ItemContainer />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
