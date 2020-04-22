@@ -5,6 +5,7 @@ import {
   REMOVE_ITEM
 } from './actions'
 
+
 function itemsReducer(state, action) {
   if (typeof state === 'undefined') {
     return {
